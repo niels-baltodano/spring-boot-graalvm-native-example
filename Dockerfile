@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 WORKDIR /app
 
 # hadolint: DL3059 - consolidate RUN
-RUN microdnf install -y zlib xz && microdnf clean all
+RUN microdnf install -y zlib xz glibc-langpack-en && microdnf clean all
 
 COPY .mvn/ .mvn/
 COPY mvnw pom.xml ./
