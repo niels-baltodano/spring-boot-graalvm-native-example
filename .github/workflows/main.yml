@@ -1,0 +1,26 @@
+---
+name: Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - edited
+      - opened
+      - synchronize
+      - reopened
+    branches:
+      - main
+permissions:
+  contents: read
+  packages: write
+jobs:
+  container:
+    name: ${{ github.base_ref || github.ref_name }}
+    uses: niels-baltodano/ghp-shared-workflows/.github/workflows/ci-cd.yml@main
+    secrets: inherit
+    with:
+      target_action: container
