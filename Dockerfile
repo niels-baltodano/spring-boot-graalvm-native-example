@@ -4,6 +4,9 @@ FROM ghcr.io/graalvm/native-image-community:21 AS builder
 # hadolint: DL4006 - pipefail before RUN with pipes
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+# Locale UTF-8 sin depender de glibc-langpack
+ENV LC_ALL=C.UTF-8 LANG=C.UTF-8
+
 WORKDIR /app
 
 # hadolint: DL3059 - consolidate RUN
