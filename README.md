@@ -13,7 +13,7 @@ A lightweight Spring Boot WebFlux application compiled to a GraalVM Native Image
 - **Fast startup** — GraalVM Native Image compilation for near-instant boot
 - **Low memory** — Minimal footprint with distroless runtime image
 - **Reactive** — Spring WebFlux with Kotlin coroutines and Caffeine caching
-- **Production-ready** — Actuator health probes, Prometheus metrics, UPX-compressed binary
+- **Production-ready** — Actuator health probes, Prometheus metrics, UPX-compressed binary, and Docker support
 
 ## Quick Start
 
