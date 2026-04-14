@@ -17,6 +17,7 @@ on:
 permissions:
   contents: read
   packages: write
+  pull-requests: read
 jobs:
   container:
     name: ${{ github.base_ref || github.ref_name }}
