@@ -1,4 +1,4 @@
-# Stage 1: Build native image with GraalVM -1
+# Stage 1: Build native image with GraalVM -2
 FROM ghcr.io/graalvm/native-image-community:21 AS builder
 
 # hadolint: DL4006 - pipefail before RUN with pipes
