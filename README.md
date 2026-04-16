@@ -8,6 +8,9 @@
 
 A lightweight Spring Boot WebFlux application compiled to a GraalVM Native Image for fast startup and low memory usage.
 
+---
+
+
 ## Features
 
 - **Fast startup** — GraalVM Native Image compilation for near-instant boot
